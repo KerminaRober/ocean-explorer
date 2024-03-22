@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="x-icon" href="turtle.png">
+  <meta name="viewport" content="width=device-width">
+  <title>Ocean Latest Discoveries </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-image: linear-gradient(to right, #01022de5 30%, #00000088), url("https://www.griffithreview.com/wp-content/uploads/2020/12/GettyImages-1410569901-1440x810.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 130vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-attachment: fixed;
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #1d3650;
+    }
+
+    body:hover {
+        background-image: linear-gradient(to right, #01022de5 30%, transparent), url("https://www.griffithreview.com/wp-content/uploads/2020/12/GettyImages-1410569901-1440x810.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* Rest of your styles... */
+
+    h1{
+      color: #9a9abc;
+      position: absolute;
+      top: 7%; /* Adjust the top value to move it up or down */
+    }
+
+    .discovery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+        margin-top: 100vh; /* Add margin to create space for existing discovery at the top */
+    }
+
+    .discovery {
+        max-width: 300px;
+        margin: 20px;
+        background-color: transparent;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+    }
+
+    .discovery:hover {
+      transform: scale(1.05);
+      cursor: pointer; 
+    }
+
+    .discovery img {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid transparent;
+    }
+
+    .discovery-info {
+        padding: 20px;
+    }
+
+    .discovery h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        color: #a39e9e;
+    }
+
+    .discovery p {
+        font-size: 1em;
+        color: #a39e9e;
+    }
+
+    a{
+      text-decoration: none;
+    }
+
+
+    @media screen and (max-width: 600px) {
+        .discovery {
+            width: calc(100% - 40px); /* Two discovery next to each other with margins */
+            margin: 10px;
+            font-size: 15px;
+        }
+        .discovery-container{
+            height: 190vh;
+      }
+         h1{
+           font-size: 30px;
+           text-align: center;
+           top: 5%;
+         }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Latest Ocean Discoveries: Unveiling the Secrets of the Deep Blue</h1>
+  <div class="discovery-container">
+      <div class="discovery">
+          <div class="discovery-info">
+              <h2> Bioluminescent Mysteries:</h2>
+              <p>Recent expeditions have uncovered new species of bioluminescent organisms in the ocean's depths. These discoveries shed light on the fascinating adaptations that allow creatures to produce their own ethereal glow, illuminating the dark abyss.</p>
+          </div>
+      </div>
+
+    <div class="discovery">
+        <div class="discovery-info">
+            <h2> Deep-Sea Microbial Life:</h2>
+            <p>Advances in technology have enabled scientists to explore the microscopic world of deep-sea microbial life. Surprising biodiversity exists in the extreme conditions of the deep ocean, challenging our understanding of life's limits and potential beyond the sunlit zones.</p>
+        </div>
+    </div>
+
+    <div class="discovery">
+        <div class="discovery-info">
+            <h2> Subaquatic Volcanic Ecosystems:</h2>
+            <p>Exploration of underwater volcanic vents has revealed thriving ecosystems sustained by the energy from Earth's internal heat. These unique environments host organisms adapted to extreme temperatures, providing insights into the potential for life on other planets.</p>
+        </div>
+    </div>
+
+    <div class="discovery">
+        <div class="discovery-info">
+            <h2> Plastic-Eating Bacteria:</h2>
+            <p>In the fight against plastic pollution, researchers have identified bacteria capable of breaking down certain types of plastic. Understanding these natural processes offers hope for developing innovative solutions to address the growing threat of plastic waste in the oceans.</p>
+        </div>
+    </div>
+
+    <div class="discovery">
+        <div class="discovery-info">
+            <h2> Ancient Shipwrecks and Underwater Archaeology:</h2>
+            <p>Advancements in underwater archaeology have led to the discovery and exploration of ancient shipwrecks, offering glimpses into maritime history. These submerged time capsules provide valuable insights into past civilizations, trade routes, and seafaring technologies.</p>
+        </div>
+    </div>
+
+    <div class="discovery">
+        <div class="discovery-info">
+            <h2> Whale Communication: Decoding the Songs:</h2>
+            <p>Recent studies on whale communication have made strides in decoding the intricate songs of these marine giants. Researchers are uncovering the complexity and purpose behind whale vocalizations, enhancing our understanding of their social structures and behaviors.</p>
+        </div>
+    </div>
+
+    <div class="discovery">
+        <div class="discovery-info">
+            <h2> Microplastics in the Deep Sea: A Growing Concern:</h2>
+            <p>Investigations into the presence of microplastics in deep-sea environments have raised concerns about the extent of plastic pollution. The discovery of microplastic particles in remote oceanic regions emphasizes the urgent need for global efforts to combat plastic waste.</p>
+        </div>
+    </div>
+
+    <div class="discovery">
+        <div class="discovery-info">
+            <h2> Coral Reef Resilience Insights:</h2>
+            <p>Scientists are gaining insights into the resilience of coral reefs, particularly those facing the impacts of climate change. Discoveries related to coral adaptation and potential interventions provide hope for the conservation and restoration of these vital ecosystems.</p>
+        </div>
+    </div>
+
+    <div class="discovery">
+        <div class="discovery-info">
+            <h2> Oceanographic Mapping and Seafloor Exploration:</h2>
+            <p>Advanced mapping technologies have allowed for detailed exploration of the ocean floor, unveiling previously unknown seafloor features and landscapes. These discoveries contribute to our understanding of Earth's geology and the interconnected dynamics of the oceans.</p>
+        </div>
+    </div>
+
+    <div class="discovery">
+        <div class="discovery-info">
+            <h2> Innovations in Marine Conservation Technologies:</h2>
+            <p>The development of cutting-edge technologies, such as autonomous underwater vehicles and artificial intelligence, is transforming marine conservation efforts. These innovations enhance monitoring, research, and enforcement of conservation measures to protect ocean biodiversity.</p>
+        </div>
+    </div>
+
+    <div class="discovery">
+        <div class="discovery-info">
+            <h2> Blue Economy Initiatives:</h2>
+            <p> The concept of the "blue economy" is gaining traction, emphasizing sustainable economic activities related to the ocean. From aquaculture and renewable energy to marine tourism, efforts are underway to harness the ocean's resources responsibly while preserving its ecological balance.</p>
+        </div>
+    </div>
+    
+  </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

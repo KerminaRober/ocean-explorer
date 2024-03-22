@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="turtle.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map</title>
+    <!-- Include Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <!-- Include Leaflet library -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script>
+        // Initialize the map
+        var map = L.map('map').setView([0, 0], 2);
+
+        // Add the OpenStreetMap layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Sample markers for marine regions, biodiversity hotspots, and conservation areas
+        var markers = [
+            { name: 'Marine Region 1', coordinates: [10, 20] },
+            { name: 'Marine Region 2', coordinates: [-10, -30] },
+            { name: 'Biodiversity Hotspot A', coordinates: [40, -60] },
+            { name: 'Conservation Area X', coordinates: [-30, 50] },
+        ];
+
+        // Add markers to the map
+        markers.forEach(function (marker) {
+            L.marker(marker.coordinates).addTo(map)
+                .bindPopup('<b>' + marker.name + '</b>');
+        });
+    </script>
+</body>
+
+</html>

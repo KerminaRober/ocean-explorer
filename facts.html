@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="x-icon" href="turtle.png">
+  <meta name="viewport" content="width=device-width">
+  <title>Ocean Facts</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-image: linear-gradient(to right, #01022de5 30%, #00000088), url("https://www.griffithreview.com/wp-content/uploads/2020/12/GettyImages-1410569901-1440x810.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 170vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-attachment: fixed;
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #1d3650;
+    }
+
+    body:hover {
+        background-image: linear-gradient(to right, #01022de5 30%, transparent), url("https://www.griffithreview.com/wp-content/uploads/2020/12/GettyImages-1410569901-1440x810.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* Rest of your styles... */
+
+    h1{
+      color: #9a9abc;
+      position: absolute;
+      top: 5%; /* Adjust the top value to move it up or down */
+    }
+
+    .facts-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+        margin-top: 100vh; /* Add margin to create space for existing facts at the top */
+    }
+
+    .facts {
+        max-width: 300px;
+        margin: 20px;
+        background-color: transparent;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+    }
+
+    .facts:hover {
+      transform: scale(1.05);
+      cursor: pointer; 
+    }
+
+    .facts img {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid transparent;
+    }
+
+    .facts-info {
+        padding: 20px;
+    }
+
+    .facts h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        color: #a39e9e;
+    }
+
+    .facts p {
+        font-size: 1em;
+        color: #a39e9e;
+    }
+
+
+
+    @media screen and (max-width: 600px) {
+        .facts {
+            width: calc(100% - 40px); /* Two facts next to each other with margins */
+            margin: 10px;
+            font-size: 15px;
+        }
+        .facts-container{
+            height: 250vh;
+      }
+         h1{
+           font-size: 30px;
+           text-align: center;
+         }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Ocean Facts</h1>
+  <div class="facts-container">
+      <div class="facts">
+          <div class="facts-info">
+              <h2>1- Vastness and Depth:</h2>
+              <p>The world's oceans cover about 70% of the Earth's surface, constituting a vast expanse that holds numerous mysteries. The deepest part of the ocean is the Challenger Deep in the Mariana Trench, reaching a staggering depth of around 36,070 feet (10,994 meters).</p>
+          </div>
+      </div>
+
+    <div class="facts">
+        <div class="facts-info">
+            <h2>2- Rich Biodiversity:</h2>
+            <p>Oceans teem with a staggering variety of life forms. From microscopic phytoplankton to colossal blue whales, the marine environment hosts an incredibly diverse array of species. Coral reefs, often referred to as the rainforests of the sea, are particularly biodiverse ecosystems.</p>
+        </div>
+    </div>
+
+    <div class="facts">
+        <div class="facts-info">
+            <h2>3- Life-Sustaining Oceans:</h2>
+            <p>Oceans play a crucial role in regulating the planet's climate. They absorb and store vast amounts of carbon dioxide, helping to mitigate the impacts of climate change. Additionally, oceans generate a significant portion of the world's oxygen through the photosynthesis of marine plants.</p>
+        </div>
+    </div>
+
+    <div class="facts">
+        <div class="facts-info">
+            <h2>4- Ocean Currents:</h2>
+            <p>Ocean currents, driven by factors like wind, temperature, and salinity, circulate throughout the globe. These currents influence weather patterns, redistribute heat, and impact marine life migration. The Gulf Stream, for example, warms the eastern coast of North America and western Europe.</p>
+        </div>
+    </div>
+
+    <div class="facts">
+        <div class="facts-info">
+            <h2>5- Underwater Mountain Ranges:</h2>
+            <p>The mid-ocean ridges, such as the Mid-Atlantic Ridge, span the globe, creating underwater mountain ranges. These geological formations are the result of tectonic plates diverging, and they play a crucial role in Earth's tectonic activity.</p>
+        </div>
+    </div>
+
+    <div class="facts">
+        <div class="facts-info">
+            <h2>6- Challenges and Threats:</h2>
+            <p>Oceans face numerous challenges, including overfishing, plastic pollution, coral bleaching, and rising sea temperatures. Human activities significantly impact marine ecosystems, necessitating global efforts to address conservation and sustainable practices.</p>
+        </div>
+    </div>
+
+    <div class="facts">
+        <div class="facts-info">
+            <h2>7- Exploration and Discoveries:</h2>
+            <p>Despite advances in technology, much of the ocean remains unexplored. Deep-sea exploration has led to the discovery of unique and bizarre creatures, such as bioluminescent organisms, strange jellyfish, and mysterious deep-sea fish.</p>
+        </div>
+    </div>
+
+    <div class="facts">
+        <div class="facts-info">
+            <h2>8- Life-Sustaining Oceans:</h2>
+            <p>Oceans play a crucial role in regulating the planet's climate. They absorb and store vast amounts of carbon dioxide, helping to mitigate the impacts of climate change. Additionally, oceans generate a significant portion of the world's oxygen through the photosynthesis of marine plants.</p>
+        </div>
+    </div>
+
+    <div class="facts">
+        <div class="facts-info">
+            <h2>9- Economic Importance:</h2>
+            <p>Oceans contribute significantly to the global economy. They support industries such as fishing, shipping, tourism, and offshore energy production. Coastal regions, in particular, benefit from the resources and services provided by the ocean.</p>
+        </div>
+    </div>
+
+    <div class="facts">
+        <div class="facts-info">
+            <h2>10- Ancient History:</h2>
+            <p>The Earth's oceans have a rich geological history, dating back millions of years. The study of marine fossils, sediments, and geological formations provides insights into the planet's ancient climate and the evolution of life.</p>
+        </div>
+    </div>
+
+    <div class="facts">
+        <div class="facts-info">
+            <h2>11- International Collaboration:</h2>
+            <p>Protecting the health of the oceans requires international cooperation. Initiatives like marine protected areas, sustainable fisheries management, and reducing plastic waste involve collaborative efforts from governments, organizations, and individuals worldwide.</p>
+        </div>
+    </div>
+
+    <div class="facts">
+        <div class="facts-info">
+            <h2>12- Ocean Currents: Climate Drivers</h2>
+            <p>Ocean currents, vital climate drivers, dynamically redistribute heat across the globe. The Gulf Stream, a warm current, transports tropical warmth poleward, impacting regional climates. Cold currents move cooler waters towards the equator. This intricate dance regulates global temperatures and weather patterns, essential for understanding Earth's climate system.</p>
+        </div>
+    </div>
+
+    <div class="facts">
+        <div class="facts-info">
+            <h2>13- Marine Biodiversity: Underwater Tapestry</h2>
+            <p>The ocean, a vast tapestry of life, hosts incredible biodiversity. From microscopic plankton to massive whales, marine ecosystems abound with diverse species. Coral reefs, often called the rainforests of the sea, showcase this rich variety, offering a vibrant display of colors, shapes, and interdependent relationships.</p>
+        </div>
+    </div>
+
+    <div class="facts">
+        <div class="facts-info">
+            <h2>14- Oceanic Zones: Layers of Life</h2>
+            <p>The ocean comprises distinct zones, each with unique characteristics. From the sunlit euphotic zone near the surface, teeming with life, to the dark abyssal depths where mysterious creatures adapt to extreme conditions, exploring these zones unveils the marvels of oceanic life across different light, temperature, and pressure gradients.</p>
+        </div>
+    </div>
+
+    <div class="facts">
+        <div class="facts-info">
+            <h2>15- Ocean as Earth's Thermostat:</h2>
+            <p>The ocean plays a crucial role in regulating Earth's temperature. Acting as a massive heat sink, it absorbs and stores large amounts of solar energy. Additionally, ocean currents transport heat around the planet, influencing climate patterns. Understanding this thermostat-like function helps comprehend climate change and its impact on marine ecosystems.</p>
+        </div>
+    </div>
+    
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="x-icon" href="turtle.png">
+  <meta name="viewport" content="width=device-width">
+  <title>Marine Life & Ecosystem</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-image: linear-gradient(to right, #01022de5 30%, #00000088), url("https://www.griffithreview.com/wp-content/uploads/2020/12/GettyImages-1410569901-1440x810.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-attachment: fixed;
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #1d3650;
+    }
+
+    body:hover {
+        background-image: linear-gradient(to right, #01022de5 30%, transparent), url("https://www.griffithreview.com/wp-content/uploads/2020/12/GettyImages-1410569901-1440x810.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* Rest of your styles... */
+
+    h1{
+      color: #9a9abc;
+      position: absolute;
+      top: 10%; /* Adjust the top value to move it up or down */
+    }
+
+    .marine-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+        margin-top: 100vh; /* Add margin to create space for existing marine at the top */
+    }
+
+    .marine {
+        max-width: 300px;
+        margin: 20px;
+        background-color: transparent;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+    }
+
+    .marine:hover {
+      transform: scale(1.05);
+      cursor: pointer; 
+    }
+
+    .marine img {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid transparent;
+    }
+
+    .marine-info {
+        padding: 20px;
+    }
+
+    .marine h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        color: #a39e9e;
+    }
+
+    .marine p {
+        font-size: 1em;
+        color: #a39e9e;
+    }
+
+    @media screen and (max-width: 600px) {
+        .marine {
+            width: calc(100% - 40px); /* Two marine next to each other with margins */
+            margin: 10px;
+            font-size: 15px;
+        }
+        .marine-container{
+            height: 160vh;
+      }
+         h1{
+           font-size: 30px;
+           text-align: center;
+           top: 5%;
+         }
+    }
+ </style>
+</head>
+
+<body>
+  <h1>Marine Life & Ecosystem: A Symphony of Interconnected Worlds</h1>
+  <div class="marine-container">
+      <div class="marine">
+          <div class="marine-info">
+              <h2>Biodiversity Below the Surface:</h2>
+              <p>The marine environment is a rich tapestry of biodiversity, housing an incredible variety of species ranging from microscopic plankton to colossal whales. This diverse array of life forms plays crucial roles in maintaining the balance of the ocean's ecosystems.</p>
+          </div>
+      </div>
+
+    <div class="marine">
+        <div class="marine-info">
+            <h2>Coral Reefs: Underwater Rainforests:</h2>
+            <p>Coral reefs, often dubbed the rainforests of the sea, are bustling hubs of marine life. These vibrant ecosystems provide a habitat for an abundance of fish, invertebrates, and corals. However, they face threats like coral bleaching and habitat destruction.</p>
+        </div>
+    </div>
+
+    <div class="marine">
+        <div class="marine-info">
+            <h2>Mangroves and Seagrasses: Coastal Guardians:</h2>
+            <p>Mangrove forests and seagrass meadows serve as essential coastal ecosystems. They act as nurseries for many marine species, offering shelter and sustenance. The intricate root systems of mangroves protect coastlines from erosion and storm surges.</p>
+        </div>
+    </div>
+
+    <div class="marine">
+        <div class="marine-info">
+            <h2>Ocean Currents and Migration Patterns:</h2>
+            <p>The oceans are in constant motion, driven by complex currents. These currents influence the distribution of marine species and play a key role in migration patterns. Understanding these movements is crucial for conservation and marine management.</p>
+        </div>
+    </div>
+
+    <div class="marine">
+        <div class="marine-info">
+            <h2>Deep-Sea Wonders: Dark Realms of Mystery:</h2>
+            <p>The deep-sea, with its extreme conditions and mysterious landscapes, hosts a unique set of organisms adapted to survive in darkness. Deep-sea exploration unveils bizarre and fascinating creatures, expanding our knowledge of life in the ocean's depths.</p>
+        </div>
+    </div>
+
+    <div class="marine">
+        <div class="marine-info">
+            <h2>Human Impact and Conservation Challenges:</h2>
+            <p>Unfortunately, human activities such as overfishing, pollution, and climate change pose significant threats to marine ecosystems. Conservation efforts are essential to mitigate these challenges and protect the delicate balance of marine life.</p>
+        </div>
+    </div>
+
+    <div class="marine">
+        <div class="marine-info">
+            <h2>The Interplay of Ocean and Climate:</h2>
+            <p>The ocean plays a crucial role in regulating the Earth's climate. It absorbs carbon dioxide, influences weather patterns, and contributes to temperature regulation. Understanding the ocean's role in climate systems is vital for addressing global climate change.</p>
+        </div>
+    </div>
+
+    <div class="marine">
+        <div class="marine-info">
+            <h2>Symbiotic Relationships and Ecological Interactions:</h2>
+            <p>Within marine ecosystems, species often engage in symbiotic relationships and ecological interactions. Mutualistic partnerships, predation, and competition are among the dynamic processes shaping the interconnected web of life in the oceans.</p>
+        </div>
+    </div>
+
+    <div class="marine">
+        <div class="marine-info">
+            <h2>Challenges and Solutions for Sustainable Seas:</h2>
+            <p>As we navigate the 21st century, it is imperative to address the challenges facing marine life. Sustainable practices, marine protected areas, and international cooperation are crucial components of ensuring the health and resilience of our oceans.</p>
+        </div>
+    </div>
+  </div>
+    
+  <script src="script.js"></script>
+</body>
+
+</html>

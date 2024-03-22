@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="x-icon" href="turtle.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ocean Explorer</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+    * {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    body {
+      background-image: linear-gradient(to right, #01022de5 30%, #00000088), url("https://www.griffithreview.com/wp-content/uploads/2020/12/GettyImages-1410569901-1440x810.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-attachment: fixed;
+    }
+
+    .container {
+      margin: 10px;
+      width: 95%;
+      height: 95%;
+      margin: 0 auto;
+    }
+
+    body:hover {
+      background-image: linear-gradient(to right, #01022de5 30%, transparent), url("https://www.griffithreview.com/wp-content/uploads/2020/12/GettyImages-1410569901-1440x810.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .logo {
+      font-size: 40px;
+      text-transform: uppercase;
+    }
+
+    ul {
+      width: 60%;
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    ul a {
+      border-bottom: 2px solid transparent;
+    }
+
+    ul a:hover {
+      border-bottom-color: white;
+    }
+
+    .content {
+      color: white;
+      width: 70%;
+      margin-top: 50px;
+      padding: 30px;
+    }
+
+    .content h2 {
+      font-size: 45px;
+      text-transform: uppercase;
+      width: 80%;
+    }
+
+    .content p {
+      font-size: 20px;
+      letter-spacing: 1px;
+      width: 350px;
+      padding: 20px 0;
+      width: 60%;
+    }
+
+    .content button {
+      font-size: 30px;
+      padding: 6px 10px;
+      border-radius: 10px;
+      border: 2px solid #fff;
+      cursor: pointer;
+      background-color: #fff;
+      color: #000;
+
+    }
+
+    .content button:hover {
+      background-color: transparent;
+      border-color: white;
+      color: white;
+    }
+
+
+    /* Additional styles for mobile responsiveness */
+      /* Your existing styles remain here */
+
+      /* Additional styles for mobile responsiveness */
+  @media only screen and (max-width: 600px) {
+    body {
+      background-attachment: fixed;
+    }
+
+    header {
+      flex-direction: column;
+      align-items: flex-start; /* Align items to the left */
+    }
+
+    header .logo {
+      margin-bottom: 20px;
+      text-align: start;
+      font-size: 35px;
+    }
+
+    ul {
+      width: 100%; /* Full width for the navigation */
+      padding: 10px 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-end; /* Align items to the left */
+      font-size: 15px;
+      margin: 5px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      margin: 7px;
+    }
+    ul a:hover {
+      border-bottom-color: white;
+    }
+    .content {
+      width: 100%;
+      padding: 10px;
+    }
+
+    .content h2 {
+      font-size: 30px;
+    }
+
+    .content p {
+      font-size: 16px;
+      width: 100%;
+    }
+
+    .content a {
+      font-size: 20px;
+    }
+  }
+
+</style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <a href="#" class="logo">Ocean Explorer</a>
+
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Marine Life</a></li>
+        <li><a href="#">Conservation</a></li>
+        <li><a href="#">Get Involved</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </header>
+
+    <div class="content">
+      <h2>Welcome to Ocean Explorer!</h2>
+      <p>
+        Dive into the mesmerizing world of the oceans with Ocean Explorer, your gateway to understanding and preserving marine life. Our mission is to share the wonders of the deep blue, from fascinating marine creatures to the vital importance of conservation. Explore top ocean facts, discover the beauty of marine ecosystems, and learn how you can play a role in protecting our oceans. Join us on a journey of discovery, education, and inspiration as we work together to ensure the well-being of our planet's most precious aquatic environments. Ready to explore the depths? Click here and embark on an oceanic adventure with Ocean Explorer!
+      </p>
+      <a href="Features.html"> <button class="button">Click here</button></a>
+       
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

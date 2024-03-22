@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="x-icon" href="turtle.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features of Ocean Explorer</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+<style>
+  * {
+      margin: 0;
+      padding: 0;
+  }
+
+  body {
+      background-image: linear-gradient(to right, #01022de5 30%, #00000088), url("https://www.griffithreview.com/wp-content/uploads/2020/12/GettyImages-1410569901-1440x810.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 230vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-attachment: fixed;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1d3650;
+  }
+
+  body:hover {
+      background-image: linear-gradient(to right, #01022de5 30%, transparent), url("https://www.griffithreview.com/wp-content/uploads/2020/12/GettyImages-1410569901-1440x810.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  /* Rest of your styles... */
+
+  h1{
+    color: #9a9abc;
+    position: absolute;
+    top: 10%; /* Adjust the top value to move it up or down */
+    font-size: 40px;
+  }
+
+  .features-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+      margin-top: 100vh; /* Add margin to create space for existing features at the top */
+  }
+
+  .features {
+      max-width: 300px;
+      margin: 20px;
+      background-color: transparent;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+  }
+
+  .features:hover {
+    transform: scale(1.05);
+    cursor: pointer; 
+  }
+
+  .features img {
+      width: 100%;
+      height: auto;
+      border-bottom: 2px solid transparent;
+  }
+
+  .features-info {
+      padding: 20px;
+  }
+
+  .features h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #a39e9e;
+  }
+
+  .features p {
+      font-size: 1em;
+      color: #a39e9e;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+
+
+
+  @media screen and (max-width: 600px) {
+      .features {
+          width: calc(90% - 40px); /* Two features next to each other with margins */
+          margin: 10px;
+          font-size: 15px;
+      }
+      .features-container{
+          height: 270vh;
+    }
+       h1{
+         font-size: 25px;
+       }
+  }
+</style>
+</head>
+
+<body>
+
+<h1>Features you can explore</h1>
+    <div class="features-container">
+        <div class="features">
+            <a href="Marine Animals.html" class="feature">
+            <img src="https://th.bing.com/th/id/OIP.RJgGnr6BR3LmdZFAZFjpcQHaEK?rs=1&pid=ImgDetMain" alt="Marine Animals">
+            <div class="features-info">
+                <h2>Marine Animals</h2>
+                <p>Marine animals, from dolphins to sea turtles, embody the vibrant diversity of ocean life. These creatures play vital roles in maintaining ecological balance, highlighting the interconnected beauty beneath the waves.</p>
+            </div>
+          </a>
+           
+        </div>
+
+        <div class="features">
+           <a href="interactive map.html" class="feature">
+            <img src="https://th.bing.com/th/id/OIP.9X-4ROl5ibJk4LZvtRlWtwAAAA?w=445&h=222&rs=1&pid=ImgDetMain" alt="Interactive Map">
+            <div class="features-info">
+                <h2>Interactive Map</h2>
+                <p>Dive into captivating oceanic exploration with interactive maps—uncover marine wonders at your fingertips!</p>
+            </div>
+           </a>
+        </div>
+
+      <div class="features">
+         <a href="facts.html" class="feature">
+          <img src="https://th.bing.com/th/id/OIP.kubWMcrn1et4ZyMJuZKv8gHaEI?w=631&h=352&rs=1&pid=ImgDetMain" alt="Ocean Facts">
+          <div class="features-info">
+              <h2>Ocean Facts</h2>
+              <p>Earth's oceans, vast at 70%, hold wonders like the Mariana Trench and vibrant coral reefs. Bioluminescence adds magic, and humpback whale migrations reveal marvels. Despite challenges, oceans are crucial for our planet's health.</p>
+          </div>
+         </a>
+      </div>
+
+
+      <div class="features">
+         <a href="life&ecosystem.html" class="feature">
+          <img src="https://th.bing.com/th/id/OIP.R39k6024XcV_LK9y-dsXdAAAAA?pid=ImgDet&w=161&h=129&c=7" alt="Marine Life & Ecosystem">
+          <div class="features-info">
+              <h2>Marine Life & Ecosystem</h2>
+              <p>The diverse array of marine life and ecosystems forms the cornerstone of our planet's vitality, contributing to ecological balance, climate regulation, and sustaining life on Earth. From vibrant coral reefs to the mysterious depths of the ocean, marine environments host an astonishing variety of species, each playing a unique role in the intricate web of life.</p>
+          </div>
+         </a>
+      </div>
+
+      <div class="features">
+         <a href="latestdiscoveries.html" class="feature">
+          <img src="https://th.bing.com/th/id/OIP.MzGTQKPWMM2DFOMiBZZ-DAAAAA?pid=ImgDet&w=161&h=120&c=7" alt="Latest Discoveries">
+          <div class="features-info">
+              <h2>Latest Discoveries</h2>
+              <p>Explore cutting-edge marine science updates, unveiling new species and groundbreaking research. Stay informed on recent discoveries, from deep-sea mysteries to innovative conservation strategies. Join us for the latest insights into the ever-evolving world beneath the waves.</p>
+          </div>
+         </a>
+      </div>
+
+      <div class="features">
+         <a href="pollution.html" class="feature">
+          <img src="https://th.bing.com/th/id/OIP.6S7WvJqfNnElgq5-bw9eugAAAA?pid=ImgDet&w=161&h=106&c=7" alt="Latest Discoveries">
+          <div class="features-info">
+              <h2>Ocean Pollution Snapshot</h2>
+              <p>A global issue, ocean pollution jeopardizes marine life through human activities like plastic waste and industrial runoff. Urgent action, from curbing single-use plastics to supporting conservation, is crucial to preserving our oceans for a sustainable future.</p>
+          </div>
+         </a>
+      </div>
+
+      <div class="features">
+         <a href="sollution.html" class="feature">
+          <img src="https://media.istockphoto.com/vectors/tips-to-reduce-plastic-waste-and-plastic-pollution-vector-id1142189011?k=6&m=1142189011&s=170667a&w=0&h=V51g74YzfUzIw-RPbJRUPlhLeZierxVQQlqCwD3J4Qc=" alt="Conservation Challenge">
+          <div class="features-info">
+              <h2>Ocean Pollution Solutions: A Call to Action</h2>
+              <p>To combat ocean pollution, adopting eco-friendly habits, minimizing single-use plastics, and promoting sustainability are key. Participating in community clean-up efforts and advocating for anti-pollution policies amplify our impact. Let's unite for a cleaner ocean, ensuring the well-being of marine life and preserving our planet's precious ecosystems.</p>
+          </div>
+         </a>
+      </div>
+
+      <div class="features">
+         <a href="partcipation.html" class="feature">
+          <img src="https://th.bing.com/th/id/OIP.WVJ17saC4hrtMAVfZI9-PQHaDF?rs=1&pid=ImgDetMain" alt="Conservation Challenge">
+          <div class="features-info">
+              <h2>Ocean Conservation Challenge: Green Actions, Big Impact</h2>
+              <p>Join the Conservation Challenge and make a difference with every eco-friendly choice. Earn badges for milestones like reducing plastic use and embracing sustainability. Your small actions add up to a greener planet, showing that collective efforts create significant impact. Be part of a community committed to positive environmental change. It's time to make your mark in the Conservation Challenge for a healthier Earth.</p>
+          </div>
+         </a>
+      </div>
+      
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

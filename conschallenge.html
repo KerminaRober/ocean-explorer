@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="x-icon" href="turtle.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conservation Challenge</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+   <style>
+     * {
+         margin: 0;
+         padding: 0;
+     }
+
+     body {
+         background-image: linear-gradient(to right, #01022de5 30%, #00000088), url("https://www.griffithreview.com/wp-content/uploads/2020/12/GettyImages-1410569901-1440x810.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+         height: 100vh;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-attachment: fixed;
+         font-family: 'Arial', sans-serif;
+         margin: 0;
+         padding: 0;
+         background-color: #1d3650;
+     }
+
+     body:hover {
+         background-image: linear-gradient(to right, #01022de5 30%, transparent), url("https://www.griffithreview.com/wp-content/uploads/2020/12/GettyImages-1410569901-1440x810.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+     h1{
+       color:  #7c90a2;
+       margin: 10px;
+     }
+     .challenge-container {
+      max-width: 800;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: transparent;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       font-size: 20px;
+     }
+
+     .progress-bar {
+      width: 100%;
+      background-color: #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-bottom: 20px;
+     }
+
+     .progress-bar-inner {
+      height: 10px;
+      background-color: #3e77a3;
+     }
+
+     .badge-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+     }
+
+     .badge {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      background-color: #3e77a3;
+      color: #ccc;
+      border-radius: 5px;
+      margin: 0 5px;
+     }
+
+     .community-section {
+      margin-bottom: 20px;
+     }
+
+     .community-link {
+      text-decoration: none;
+      color: #298bd6;
+      font-weight: bold;
+     }
+
+     h3, ul, p{
+       color: #7c90a2;
+       list-style: none;
+     }
+     a{
+       color: #3e76d0;
+       text-decoration: none;
+     }
+
+     li{
+       margin: 3px;
+     }
+     h3{
+       margin: 3px;
+     }
+
+     @media screen and (max-width: 600px) {
+         .challenge-container{
+             height: 100vh;
+             font-size: 15px;
+       }
+     }
+   </style>
+</head>
+
+<body>
+    <div class="challenge-container">
+        <h1>Conservation Challenge</h1>
+
+        <div class="progress-bar">
+            <div class="progress-bar-inner"></div>
+        </div>
+
+        <div class="badge-container">
+            <div class="badge">Plastic-Free Days: 5</div>
+            <div class="badge">Eco-friendly Choices: 10</div>
+            <div class="badge">Carbon Footprint: Low</div>
+        </div>
+
+        <div class="community-section">
+            <p>Join the community and share your experiences in the <a href="#" class="community-link">Community Forum</a>.</p>
+        </div><br>
+
+        <h3>Monthly Challenges</h3>
+        <ul>
+            <li>February: Reduce Single-Use Plastics</li>
+            <li>March: Conserve Water</li>
+            <li>April: Sustainable Eating</li>
+        </ul><br>
+
+        <h3>Interactive Content</h3>
+        <p>Test your knowledge with our <a href="https://forms.gle/i77o9CnWzELv2twZ8">Ocean Conservation Quiz</a> or play the <a href="https://forms.gle/7bLQ4fB19mVY8Ssc7">Eco-Friendly Choices Game</a>.</p><br>
+
+        <h3>Donation Opportunities</h3>
+        <p>Support ocean conservation efforts by contributing to <a href="#">Ocean Guardians</a>.</p><br>
+
+        <h3>Newsletter Subscription</h3>
+        <p>Subscribe to our newsletter for updates on ocean conservation, latest discoveries, and upcoming challenges.</p>
+    </div><br>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="x-icon" href="turtle.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ocean Conservation Challenge</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+        background-image: linear-gradient(to right, #01022de5 30%, #00000088), url("https://www.griffithreview.com/wp-content/uploads/2020/12/GettyImages-1410569901-1440x810.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-attachment: fixed;
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #1d3650;
+    }
+    body:hover {
+        background-image: linear-gradient(to right, #01022de5 30%, transparent), url("https://www.griffithreview.com/wp-content/uploads/2020/12/GettyImages-1410569901-1440x810.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .challenge-container {
+      text-align: center;
+      margin: 50px;
+    }
+
+    h1 {
+      color: #a0adca;
+      font-size: 40px;
+      text-align: center;
+    }
+    .join{
+      color: #aaafcb;
+      font-size: 20px;
+    }
+    .challenge {
+      background-color: transparent;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .challenge-text {
+      font-size: 1.2em;
+      color: #7299c0;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #2f70b6;
+      color: #ffffff;
+      font-size: 1em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #235790;
+    }
+
+
+    @media screen and (max-width: 600px) {
+      body{
+        height: 70vh;
+      }
+      .challenge-container{
+        margin: 15px;
+      }
+      h1{
+        font-size: 35px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="challenge-container">
+  <h1>Ocean Conservation Challenge</h1>
+  <p class="join">Join us in our mission to reduce plastic waste and protect our oceans!</p>
+  <div class="challenge">
+    <p class="challenge-text">Challenge: Say no to single-use plastics for a week.</p>
+    <a href="https://7d71333a-125f-498f-a154-0a4ea986db6c-00-3q3amn5ybqlrp.worf.replit.dev/"> <button id="participateBtn">Participate Now</button>  </a>
+  </div>
+</div>
+
+<script>
+  document.getElementById('participateBtn').addEventListener('click', function() {
+    alert('Thank you for participating in the Ocean Conservation Challenge! Together, we can make a difference.');
+  });
+
+</script>
+</body>
+</html>
